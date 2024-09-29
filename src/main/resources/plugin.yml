@@ -1,0 +1,157 @@
+name: olde_core
+version: '${project.version}'
+main: network.olde.olde_core.OldeCore
+api-version: '1.21'
+authors: [ Luminyl ]
+description: Framework for OldeMC
+website: https://www.google.com/
+commands:
+  back:
+    description: Teleport to last death location
+    usage: "/back"
+    permission: oldecore.back
+  backpack:
+    description: Player backpack
+    usage: "/backpack"
+  ban:
+    description: Ban player
+    usage: "/ban <player>"
+    permission: oldecore.ban
+  broadcast:
+    description: Broadcasts a message to the server.
+    usage: "/broadcast <message>"
+    permission: oldecore.broadcast
+  craft:
+    description: Opens a crafting table.
+    usage: "/craft"
+    permission: oldecore.craft
+  feed:
+    description: Feeds player
+    usage: "/feed <player>"
+    permission: oldecore.feed
+    aliases:
+      - eat
+  fly:
+    description: Flyyyy
+    usage: "/fly"
+    permission: oldecore.fly
+  gamemode:
+    description: Change gamemode
+    usage: "/gamemode <gamemode> <player>"
+    permission:
+      oldecore.gamemode
+      oldecore.gamemode.spectator
+      oldecore.gamemode.others
+    aliases:
+      - gm
+  god:
+    description: Become invincible.
+    usage: "/god <target>"
+    permission: oldecore.god
+  heal:
+    description: Heals a player
+    usage: "/heal <player>"
+    permission: oldecore.heal
+  hide:
+    description: Hide yourself
+    usage: "/hide <player>"
+    permission:
+      oldecore.hide
+      oldecore.hide.see
+  ipban:
+    description: Bans a player by their IP address
+    usage: "/ipban <player> <reason>"
+    permission: oldecore.ipban
+  mute:
+    description: Mute a player
+    usage: "/mute <player>"
+    permission: oldecore.mute
+  speed:
+    description: Change speed
+    usage: "/speed <speed> <player>"
+    permission: oldecore.speed
+  kick:
+    description: Kicks player from the server
+    usage: "/kick <player> <reason>"
+    permission: oldecore.kick
+  kill:
+    description: Kill a player
+    usage: "/kill <player>"
+    permission: oldecore.kill
+  teleport:
+    description: Teleport to a player
+    usage: "/teleport <target> <target>"
+    permission: oldecore.teleport
+    aliases :
+      - tp
+  unban:
+    description: Unbans a player
+    usage: "/unban <player>"
+    permission: oldecore.unban
+    aliases:
+      - pardon
+  unmute:
+    description: Unmutes a player
+    usage: "/unmute player"
+    permission: oldecore.mute
+permissions:
+  oldecore.back:
+    description: This permission is for the /back command
+    default: op
+  oldecore.ban:
+    description: This permissions is for the /ban command
+    default: op
+  oldecore.broadcast:
+    description: This permission is for the /broadcast command
+    default: op
+  oldecore.craft:
+    description: This permissions is for the /craft command
+    default: op
+  oldecore.feed:
+    description: This permission is for the /feed command
+    default: op
+  oldecore.fly:
+    description: This permission is for the /fly command
+    default: op
+  oldecore.gamemode:
+    description: This permission is for the /gamemode command
+    default: op
+  oldecore.gamemode.spectator:
+    description: This permission is for the /gamemode command spectator
+    default: op
+  oldecore.gamemode.others:
+    description: This permission is for the /gamemode command others
+    default: op
+  oldecore.god:
+    description: This permission is for the /god command
+    default: op
+  oldecore.heal:
+    description: This permission is for the /heal command.
+    default: op
+  oldecore.hide:
+    description: This permission is for the /hide command.
+    default: op
+  oldecore.hide.see:
+    description: This permission is for the /hide command.
+    default: op
+  oldecore.ipban:
+    description: This permission is for the /ipban command.
+    default: op
+  oldecore.kick:
+    description: This permissions is for the /kick command.
+    default: op
+  oldecore.mute:
+    description: This permissions is for the /mute||/unmute command
+    default: op
+  oldecore.kill:
+    description: This permission is for the /kill command.
+    default: op
+  oldecore.speed:
+    description: This permission is for the /speed command
+    default: op
+  oldecore.teleport:
+    description: This permission is for the /teleport command.
+    default: op
+  oldecore.unban:
+    description: This permissions is for the /unban command.
+    default: op
